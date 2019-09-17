@@ -1,3 +1,5 @@
+import random
+
 def ask_question():
 	question = input("What is your question?\n")
 	return question
@@ -7,10 +9,9 @@ possible_answers = ['It is certain.', 'it is decidedly so.', 'Without a doubt.',
                     "Don't count on it.", "My reply is no.","My sources say no.","Outlook not so good.","Very doubtful."]
 
 
-def 8ball_answer():
+def eightball_answer():
         x = random.choice(possible_answers)
         return x
-=======
     
 if __name__ == "__main__":
 	while True:
@@ -20,6 +21,7 @@ if __name__ == "__main__":
 		if question[-1]!='?':
 			print("I’m sorry, I can only answer questions")
 		else:
-			print(8ball_answer())
+			print(eightball_answer())
 			break
+
 
