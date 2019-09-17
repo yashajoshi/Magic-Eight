@@ -10,3 +10,16 @@ possible_answers = ['It is certain.', 'it is decidedly so.', 'Without a doubt.',
 def 8ball_answer():
         x = random.choice(possible_answers)
         return x
+=======
+    
+if __name__ == "__main__":
+	while True:
+		question = ask_question()
+		if question == "quit":
+			break
+		if question[-1]!='?':
+			print("I’m sorry, I can only answer questions")
+		else:
+			print(8ball_answer())
+			break
+
